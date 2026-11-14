@@ -28,8 +28,8 @@
       body: 'Cohen swore that Elite "assumed" a $270,600 SBA loan "pursuant to the Purchase Agreement." The Purchase Agreement says "no liabilities or obligations of Seller are being assumed by Buyer." He also swore to a company sale on "a date unknown to me." See the comparison below.',
       src: 'Declaration of Jayson Cohen, October 29, 2026, paragraphs 8 and 9; Purchase Agreement, paragraph 5' },
     { k: 'alleg', big: 'RICO', head: 'He and his agency are federal defendants',
-      body: 'Cohen and American Legacy Solutions LLC are named defendants on civil RICO and RICO conspiracy claims in the Central District of California. The claims are allegations by the publisher of this site and have not been proven.',
-      src: 'Martin v. U.S. Small Business Administration, et al., No. 2:26-cv-03714-WLH-DFM, Third and Fourth Causes of Action' }
+      body: 'Cohen and American Legacy Solutions LLC are named defendants on civil RICO and RICO conspiracy claims in the Central District of California. The claims are allegations and have not been proven.',
+      src: 'C.D. Cal. No. 2:26-cv-03714-WLH-DFM, Third and Fourth Causes of Action' }
   ];
   var cardsEl = $('cards');
   cards.forEach(function (c, i) {
@@ -108,23 +108,23 @@
       x: 'Elite Sound Company LLC bought the business assets of Entertainment Technology, LLC for $215,000. Cohen later swore: "I personally funded the $215,000.00 payment." The federal complaint alleges the seller had a book value of approximately $1,438,000; that figure is an unproven allegation.',
       s: 'Cohen declaration, paragraph 7; Purchase Agreement; First Amended Complaint, paragraph 105' },
     { d: 'Apr 5, 2026', y: '2026', k: 'alleg', t: 'Federal racketeering action filed',
-      x: 'Martin v. U.S. Small Business Administration, et al. was filed in the Central District of California. The First Amended Complaint names Cohen and American Legacy Solutions LLC as defendants on civil RICO (18 U.S.C. § 1962(c)) and RICO conspiracy (18 U.S.C. § 1962(d)) claims. The claims are unproven allegations.',
+      x: 'A civil action was filed in the United States District Court for the Central District of California. The First Amended Complaint names Cohen and American Legacy Solutions LLC as defendants on civil RICO (18 U.S.C. § 1962(c)) and RICO conspiracy (18 U.S.C. § 1962(d)) claims. The claims are unproven allegations.',
       s: 'No. 2:26-cv-03714-WLH-DFM' },
     { d: 'Apr 14, 2026', y: '2026', k: 'reg', t: 'Listed as authorized to transact for the agency',
       x: 'Since this date the Department\'s record has listed Cohen as authorized to transact for American Legacy Solutions, LLC, dba American Legacy Insurance Solutions, License No. 0M28275.',
       s: 'Department license record, as cited in the complaint' },
     { d: 'Oct 29, 2026', y: '2026', k: 'sworn', t: 'Signs a declaration under penalty of perjury',
-      x: 'In Martin v. Wald, Cohen swore that Elite "assumed" a $270,600 SBA loan "pursuant to the Purchase Agreement," and that Martin "sold" a company called Airlink "on a date unknown to me." The Purchase Agreement states that "no liabilities or obligations of Seller are being assumed by Buyer."',
+      x: 'In Ventura County Superior Court Case No. 2024CUNP032821, Cohen swore that Elite "assumed" a $270,600 SBA loan "pursuant to the Purchase Agreement," and that the plaintiff "sold" a company called Airlink "on a date unknown to me." The Purchase Agreement states that "no liabilities or obligations of Seller are being assumed by Buyer."',
       s: 'Cohen declaration, paragraphs 8 and 9; Purchase Agreement, paragraph 5' },
     { d: 'Nov 5, 2026', y: '2026', k: 'alleg', t: 'Perjury prosecution requested',
-      x: 'Martin submitted a criminal complaint and request for prosecution to the Ventura County District Attorney alleging two counts of perjury by Cohen (Pen. Code, § 118). This is a request by a private party. This site does not report that any charge has been filed.',
+      x: 'A criminal complaint and request for prosecution was submitted to the Ventura County District Attorney alleging two counts of perjury by Cohen (Pen. Code, § 118). This is a request by a private party. This site does not report that any charge has been filed.',
       s: 'Criminal Complaint and Request for Prosecution, November 5, 2026' },
     { d: 'Nov 8, 2026', y: '2026', k: 'alleg', t: 'License complaint filed with the Department',
-      x: 'Martin filed a complaint asking the Department of Insurance to investigate and to revoke License Nos. 0G23649 and 0M28275 under Insurance Code sections 1668, 1668.5, and 1738.',
+      x: 'A complaint was filed asking the Department of Insurance to investigate and to revoke License Nos. 0G23649 and 0M28275 under Insurance Code sections 1668, 1668.5, and 1738.',
       s: 'Complaint to the Licensing Background Section, November 8, 2026' },
     { d: 'Dec 10, 2026', y: '2026', k: 'alleg', t: 'Hearing set on the motion his declaration supports',
-      x: 'The defendants\' motion in Martin v. Wald, which relies on Cohen\'s declaration, is set for hearing in Department 43 of the Ventura County Superior Court.',
-      s: 'Declaration captions, Martin v. Wald, No. 2024CUNP032821' }
+      x: 'The defense motion in Case No. 2024CUNP032821, which relies on Cohen\'s declaration, is set for hearing in Department 43 of the Ventura County Superior Court.',
+      s: 'Declaration captions, No. 2024CUNP032821' }
   ];
   var filters = [['all', 'Everything'], ['reg', "Regulator's record"], ['sworn', "Cohen's sworn words"], ['pub', 'Public record cited'], ['alleg', 'Allegations, not proven']];
   var fEl = $('filters'), tl = $('tl'), det = $('tlDetail'), cur = 'all', sel = 1;
@@ -169,9 +169,9 @@
       rh: 'The Purchase Agreement says', rq: '"5. Non-Assumption of Liabilities. This Agreement covers only Seller\'s assets; no liabilities or obligations of Seller are being assumed by Buyer. All liabilities and obligations of Seller shall continue as Seller\'s liabilities and obligations and shall be paid solely by Seller."', rs: 'Business Assets Sale Agreement, November 26, 2022, paragraph 5, filed by Cohen\'s own lawyer in the same set of papers',
       why: 'Cohen named the contract as his source. He swore he owns ninety percent of the buyer and "personally funded" its $215,000 payment under that same agreement. The contract he cited says the buyer assumed nothing.' },
     { tab: 'The "sale" of Airlink',
-      lh: 'Cohen swore', lq: '"Mr. Martin also owned a second company, known as Airlink, which he sold to Advantage Telecom on a date unknown to me. Chris Brassers is the owner of Advantage Telecom."', ls: 'Declaration of Jayson Cohen, paragraph 9',
-      rh: 'His lawyer\'s paralegal swore', rq: 'Airlink\'s business report "identifies Travis Martin in reported executive roles including chief executive officer, president, chief financial officer, director, and, secretary," and the Secretary of State report "identifies Airlink Internet, Inc. as active and in good standing with the Franchise Tax Board, and lists Travis E. Martin as its registered agent in the current filing information."', rs: 'Declaration of Rene Creamer, November 3, 2026, paragraphs 9 and 10, filed with the same motion',
-      why: 'Cohen swore to the sale as a fact within his personal knowledge while admitting he does not know when it happened. The only source he names for anything about Airlink is "others in the telecommunications business." Martin states he never sold Airlink.' }
+      lh: 'Cohen swore', lq: '"[The plaintiff] also owned a second company, known as Airlink, which he sold to Advantage Telecom on a date unknown to me. Chris Brassers is the owner of Advantage Telecom."', ls: 'Declaration of Jayson Cohen, paragraph 9',
+      rh: 'His lawyer\'s paralegal swore', rq: 'Airlink\'s business report "identifies [the plaintiff] in reported executive roles including chief executive officer, president, chief financial officer, director, and, secretary," and the Secretary of State report "identifies Airlink Internet, Inc. as active and in good standing with the Franchise Tax Board, and lists [the plaintiff] as its registered agent in the current filing information."', rs: 'Declaration of Rene Creamer, November 3, 2026, paragraphs 9 and 10, filed with the same motion',
+      why: 'Cohen swore to the sale as a fact within his personal knowledge while admitting he does not know when it happened. The only source he names for anything about Airlink is "others in the telecommunications business."' }
   ];
   var tabs = $('cmpTabs'), cmp = $('cmp'), ci = 0;
   cmps.forEach(function (c, i) {
@@ -235,8 +235,8 @@
     ['$45,981 federal tax lien, May 12, 2015', 'pub', 'Recorded by the United States', 'Lien as cited in the complaint'],
     ['Swore Elite "assumed" the SBA loan "pursuant to the Purchase Agreement"', 'sworn', 'His sworn statement. The agreement says "no liabilities or obligations of Seller are being assumed by Buyer"', 'Cohen declaration, paragraph 8; Purchase Agreement, paragraph 5'],
     ['"Personally funded" the $215,000 asset purchase', 'sworn', 'His sworn statement', 'Cohen declaration, paragraph 7'],
-    ['Perjury', 'alleg', 'Alleged by Martin. Prosecution requested November 5, 2026. No charge reported, no finding by any court', 'Request for Prosecution, Ventura County District Attorney'],
-    ['Civil RICO and RICO conspiracy, against Cohen and American Legacy Solutions LLC', 'alleg', 'Alleged by Martin in a pending federal action. Not proven, no ruling', 'No. 2:26-cv-03714-WLH-DFM'],
+    ['Perjury', 'alleg', 'Alleged. Prosecution requested November 5, 2026. No charge reported, no finding by any court', 'Request for Prosecution, Ventura County District Attorney'],
+    ['Civil RICO and RICO conspiracy, against Cohen and American Legacy Solutions LLC', 'alleg', 'Alleged in a pending federal action. Not proven, no ruling', 'No. 2:26-cv-03714-WLH-DFM'],
     ['License status', 'reg', 'Both licenses active as of November 8, 2026 (No. 0G23649 through November 30, 2028; No. 0M28275 through April 30, 2028)', 'Department license records, as cited in the complaint']
   ];
   var tb = $('statusRows');
