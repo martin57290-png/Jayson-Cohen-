@@ -5,7 +5,7 @@
     reg: ['t-reg', "Regulator's record"],
     sworn: ['t-sworn', "Cohen's sworn words"],
     pub: ['t-pub', 'Public record cited'],
-    alleg: ['t-alleg', 'Allegation, not proven']
+    alleg: ['t-alleg', 'Allegation']
   };
   function tag(k) { return '<span class="tag ' + TAGS[k][0] + '">' + TAGS[k][1] + '</span>'; }
   function $(id) { return document.getElementById(id); }
@@ -28,7 +28,7 @@
       body: 'Cohen swore that Elite "assumed" a $270,600 SBA loan "pursuant to the Purchase Agreement." The Purchase Agreement says "no liabilities or obligations of Seller are being assumed by Buyer." He also swore to a company sale on "a date unknown to me." See the comparison below.',
       src: 'Declaration of Jayson Cohen, October 29, 2026, paragraphs 8 and 9; Purchase Agreement, paragraph 5' },
     { k: 'alleg', big: 'RICO', head: 'He and his agency are federal defendants',
-      body: 'Cohen and American Legacy Solutions LLC are named defendants on civil RICO and RICO conspiracy claims in the Central District of California. The claims are allegations and have not been proven.',
+      body: 'Cohen and American Legacy Solutions LLC are named defendants on civil RICO and RICO conspiracy claims in the Central District of California. The claims are allegations.',
       src: 'C.D. Cal. No. 2:26-cv-03714-WLH-DFM, Third and Fourth Causes of Action' }
   ];
   var cardsEl = $('cards');
@@ -105,10 +105,10 @@
       x: 'Four months after the lien, the Commissioner found Cohen had "substantially met and complied with the restrictions and conditions placed upon said license" and ordered an unrestricted license issued.',
       s: 'Order Removing Restrictions, File No. LBB 4044-BP (AR)' },
     { d: 'Nov 26, 2022', y: '2022', k: 'sworn', t: 'Funds a $215,000 asset purchase',
-      x: 'Elite Sound Company LLC bought the business assets of Entertainment Technology, LLC for $215,000. Cohen later swore: "I personally funded the $215,000.00 payment." The federal complaint alleges the seller had a book value of approximately $1,438,000; that figure is an unproven allegation.',
+      x: 'Elite Sound Company LLC bought the business assets of Entertainment Technology, LLC for $215,000. Cohen later swore: "I personally funded the $215,000.00 payment." The federal complaint alleges the seller had a book value of approximately $1,438,000; that figure is an allegation.',
       s: 'Cohen declaration, paragraph 7; Purchase Agreement; First Amended Complaint, paragraph 105' },
     { d: 'Apr 5, 2026', y: '2026', k: 'alleg', t: 'Federal racketeering action filed',
-      x: 'A civil action was filed in the United States District Court for the Central District of California. The First Amended Complaint names Cohen and American Legacy Solutions LLC as defendants on civil RICO (18 U.S.C. § 1962(c)) and RICO conspiracy (18 U.S.C. § 1962(d)) claims. The claims are unproven allegations.',
+      x: 'A civil action was filed in the United States District Court for the Central District of California. The First Amended Complaint names Cohen and American Legacy Solutions LLC as defendants on civil RICO (18 U.S.C. § 1962(c)) and RICO conspiracy (18 U.S.C. § 1962(d)) claims. The claims are allegations.',
       s: 'No. 2:26-cv-03714-WLH-DFM' },
     { d: 'Apr 14, 2026', y: '2026', k: 'reg', t: 'Listed as authorized to transact for the agency',
       x: 'Since this date the Department\'s record has listed Cohen as authorized to transact for American Legacy Solutions, LLC, dba American Legacy Insurance Solutions, License No. 0M28275.',
@@ -126,7 +126,7 @@
       x: 'The defense motion in Case No. 2024CUNP032821, which relies on Cohen\'s declaration, is set for hearing in Department 43 of the Ventura County Superior Court.',
       s: 'Declaration captions, No. 2024CUNP032821' }
   ];
-  var filters = [['all', 'Everything'], ['reg', "Regulator's record"], ['sworn', "Cohen's sworn words"], ['pub', 'Public record cited'], ['alleg', 'Allegations, not proven']];
+  var filters = [['all', 'Everything'], ['reg', "Regulator's record"], ['sworn', "Cohen's sworn words"], ['pub', 'Public record cited'], ['alleg', 'Allegations']];
   var fEl = $('filters'), tl = $('tl'), det = $('tlDetail'), cur = 'all', sel = 1;
   filters.forEach(function (f) {
     var b = document.createElement('button');
@@ -207,9 +207,9 @@
   /* ---------- Network ---------- */
   var netText = {
     cohen: '<strong>Jayson Cohen.</strong> California insurance License No. 0G23649. He swore he is "a ninety percent (90%) owner" of Elite Sound Company, LLC. (Cohen declaration, paragraph 1.)',
-    als: '<strong>American Legacy Solutions LLC.</strong> A licensed insurance agency, License No. 0M28275. The Department\'s record lists Cohen as authorized to transact for it. The federal complaint alleges it is "owned and controlled by Cohen" and that it "supplied or facilitated the capital, credit, accounts, resources, structure, business support, office support, and operating capacity for the acquisition." The second sentence is an unproven allegation. (First Amended Complaint, paragraph 28.)',
+    als: '<strong>American Legacy Solutions LLC.</strong> A licensed insurance agency, License No. 0M28275. The Department\'s record lists Cohen as authorized to transact for it. The federal complaint alleges it is "owned and controlled by Cohen" and that it "supplied or facilitated the capital, credit, accounts, resources, structure, business support, office support, and operating capacity for the acquisition." The second sentence is an allegation. (First Amended Complaint, paragraph 28.)',
     elite: '<strong>Elite Sound Company LLC.</strong> Cohen swore he owns ninety percent of it and that he "personally funded" its $215,000 payment. (Cohen declaration, paragraphs 1 and 7.)',
-    et: '<strong>Entertainment Technology, LLC assets.</strong> Sold to Elite on November 26, 2022 for $215,000. The federal complaint alleges a book value of approximately $1,438,000, an unproven allegation. (Purchase Agreement; First Amended Complaint, paragraph 105.)',
+    et: '<strong>Entertainment Technology, LLC assets.</strong> Sold to Elite on November 26, 2022 for $215,000. The federal complaint alleges a book value of approximately $1,438,000, an allegation. (Purchase Agreement; First Amended Complaint, paragraph 105.)',
     addr: '<strong>One address.</strong> According to Department records and the federal complaint, Cohen, his insurance agency, and Elite Sound Company LLC all use the same Ventura office address. (Department license records; First Amended Complaint, paragraph 29.)'
   };
   var net = $('net'), info = $('netInfo');
@@ -236,7 +236,7 @@
     ['Swore Elite "assumed" the SBA loan "pursuant to the Purchase Agreement"', 'sworn', 'His sworn statement. The agreement says "no liabilities or obligations of Seller are being assumed by Buyer"', 'Cohen declaration, paragraph 8; Purchase Agreement, paragraph 5'],
     ['"Personally funded" the $215,000 asset purchase', 'sworn', 'His sworn statement', 'Cohen declaration, paragraph 7'],
     ['Perjury', 'alleg', 'Alleged. Prosecution requested November 5, 2026. No charge reported, no finding by any court', 'Request for Prosecution, Ventura County District Attorney'],
-    ['Civil RICO and RICO conspiracy, against Cohen and American Legacy Solutions LLC', 'alleg', 'Alleged in a pending federal action. Not proven, no ruling', 'No. 2:26-cv-03714-WLH-DFM'],
+    ['Civil RICO and RICO conspiracy, against Cohen and American Legacy Solutions LLC', 'alleg', 'Alleged in a pending federal action. No ruling', 'No. 2:26-cv-03714-WLH-DFM'],
     ['License status', 'reg', 'Both licenses active as of November 8, 2026 (No. 0G23649 through November 30, 2028; No. 0M28275 through April 30, 2028)', 'Department license records, as cited in the complaint']
   ];
   var tb = $('statusRows');
