@@ -236,7 +236,7 @@
     ['Swore Elite "assumed" the SBA loan "pursuant to the Purchase Agreement"', 'sworn', 'His sworn statement. The agreement says "no liabilities or obligations of Seller are being assumed by Buyer"', 'Cohen declaration, paragraph 8; Purchase Agreement, paragraph 5'],
     ['"Personally funded" the $215,000 asset purchase', 'sworn', 'His sworn statement', 'Cohen declaration, paragraph 7'],
     ['Perjury', 'alleg', 'Alleged. Prosecution requested November 5, 2026. No charge reported, no finding by any court', 'Request for Prosecution, Ventura County District Attorney'],
-    ['Civil RICO and RICO conspiracy, against Cohen and American Legacy Solutions LLC', 'alleg', 'Alleged in a pending federal action. No answer filed. Action stayed September 2, 2026 pending related state cases; stay on appeal. No ruling on the claims', 'No. 2:26-cv-03714-WLH-DFM'],
+    ['Civil RICO and RICO conspiracy, against Cohen and American Legacy Solutions LLC', 'alleg', 'Alleged in a pending federal action. Not denied by Cohen; no answer filed. Action stayed September 2, 2026 pending related state cases; stay on appeal. No ruling on the claims', 'No. 2:26-cv-03714-WLH-DFM'],
     ['License status', 'reg', 'Both licenses active as of November 8, 2026 (No. 0G23649 through November 30, 2028; No. 0M28275 through April 30, 2028)', 'Department license records, as cited in the complaint']
   ];
   var tb = $('statusRows');
