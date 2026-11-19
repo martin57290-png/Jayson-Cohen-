@@ -167,3 +167,9 @@ footer { margin-top: 56px; border-top: 1px solid var(--rule); background: var(--
   .qsub { font-size: 1rem; }
 }
 @media (prefers-reduced-motion: reduce) { .mark { animation: none; background-size: 100% 46%; } .scrollcue span { animation: none; } }
+
+/* ---------- film ---------- */
+.film { background: #14161a; padding: 40px 0 34px; }
+.film video { display: block; width: 100%; height: auto; background: #14161a; box-shadow: 0 20px 60px rgba(0,0,0,.5); }
+.film .cite { color: #9aa1ad; margin: 14px 0 0; }
+.scrolly { border-top: 1px solid #2a2e36; }
