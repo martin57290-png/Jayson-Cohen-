@@ -254,3 +254,10 @@ footer { margin-top: 40px; }
 .btn-dark:hover { background: #000; color: var(--hl); }
 .band .dl { margin: 22px 0 0; }
 .close .dl { margin: 0; }
+
+/* hero: clean lead-in to the video */
+.hero .dek { font-size: clamp(1.2rem, 2.2vw, 1.45rem); margin-bottom: 30px; }
+.scrollcue { font-size: clamp(17px, 2.4vw, 22px); letter-spacing: .04em; }
+.scrollcue a { color: var(--ink); text-decoration: none; border-bottom: 4px solid var(--hl); padding-bottom: 4px; }
+.scrollcue a:hover { background: var(--hl); }
+.hero { padding-bottom: 54px; }
