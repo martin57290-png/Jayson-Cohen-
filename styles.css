@@ -261,3 +261,8 @@ footer { margin-top: 40px; }
 .scrollcue a { color: var(--ink); text-decoration: none; border-bottom: 4px solid var(--hl); padding-bottom: 4px; }
 .scrollcue a:hover { background: var(--hl); }
 .hero { padding-bottom: 54px; }
+
+/* button text must win over section link colors */
+a.btn { color: #14161a; }
+a.btn.btn-dark, .band a.btn.btn-dark { color: #fff; }
+a.btn.btn-dark:hover, .band a.btn.btn-dark:hover { color: var(--hl); }
